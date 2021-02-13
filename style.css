@@ -1,7 +1,8 @@
 body{
     margin: 0;
     padding: 0;
-    background: #f1f1f1;
+    background: #dde5e6;
+    /*background: #64cccf;*/
 }
 
 hr{
@@ -10,11 +11,46 @@ hr{
 }
 
 .container-card{
-    width: 80%;
-    margin: 185px 49px 49px 49px;
+    margin: 185px;
     text-align: center;
     background-color: #fff;
     border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    
+}
+
+.dot-top{
+    width: 100px;
+    object-fit: cover;
+    left: 50px;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+
+.dot-bottom{
+    width: 20%;
+    float: left;
+}
+
+@media screen and (max-width: 800px){
+    .container-card{
+        margin: 185px 49px 49px 49px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .container-card{
+        margin-left: 500px;
+        margin-right: 500px;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .container-card{
+        margin-left: 500px;
+        margin-right: 500px;
+    }
 }
 
 .container-image{

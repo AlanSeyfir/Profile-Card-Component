@@ -1,7 +1,11 @@
 body{
     margin: 0;
     padding: 0;
-    background: #dde5e6;
+    background: hsl(185, 75%, 39%);
+    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position-x: left -100px, right -100px;
+    background-position-y: top -550px, bottom -550px;
     /*background: #64cccf;*/
 }
 
@@ -19,37 +23,35 @@ hr{
     
 }
 
-.dot-top{
-    width: 100px;
-    object-fit: cover;
-    left: 50px;
-    overflow: hidden;
-    position: relative;
-    z-index: -1;
-}
-
-.dot-bottom{
-    width: 20%;
-    float: left;
+@media (max-width: 673px){
+    body{
+        background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+        background-size: 100%;
+        background-position-x: left -200px, right -200px;
+        background-position-y: top -50%, bottom -50%;
+    }
 }
 
 @media screen and (max-width: 800px){
     .container-card{
         margin: 185px 49px 49px 49px;
+        background-position-x: left 300px, right 300px;
     }
 }
 
 @media screen and (min-width: 1200px){
     .container-card{
-        margin-left: 500px;
-        margin-right: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 400px;
     }
 }
 
 @media screen and (min-width: 1400px){
     .container-card{
-        margin-left: 500px;
-        margin-right: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 400px;
     }
 }
 
